@@ -21,7 +21,7 @@
       <div id="unity-warning"> </div>
     </div>
 	
-		<script>
+	<script>
       vkBridge.send('VKWebAppInit')
   .then((data) => { 
     if (data.result) {
@@ -123,7 +123,7 @@ vkBridge.send('VKWebAppShowInviteBox', {
 		          function callMethodWallPost() // вызываем метод ВК
          {
             vkBridge.send('VKWebAppShowWallPostBox', {
-              message: 'Я играю в "Бросьте вызов препятствиям!", присоединяйся и ты!',
+              message: 'Я играю в [https://vk.com/app51725661_570312098|"Бросьте вызов препятствиям!"], присоединяйся и ты!',
 		attachment: 'https://vk.com/app51725661_570312098'
               })
               .then((data) => {
